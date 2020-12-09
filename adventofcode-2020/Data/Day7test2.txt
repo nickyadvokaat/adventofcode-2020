@@ -1,0 +1,7 @@
+shinygold-2darkred
+darkred-2darkorange
+darkorange-2darkyellow
+darkyellow-2darkgreen
+darkgreen-2darkblue
+darkblue-2darkviolet
+darkviolet-noother

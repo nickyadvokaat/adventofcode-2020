@@ -1,0 +1,9 @@
+lightred-1brightwhite-2mutedyellow
+darkorange-3brightwhite-4mutedyellow
+brightwhite-1shinygold
+mutedyellow-2shinygold-9fadedblue
+shinygold-1darkolive-2vibrantplum
+darkolive-3fadedblue-4dottedblack
+vibrantplum-5fadedblue-6dottedblack
+fadedblue-noother
+dottedblack-noother
