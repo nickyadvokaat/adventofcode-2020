@@ -23,7 +23,7 @@ class Day1 {
         print(findTwoEntries(entries: entries) ?? "not found")
 
         // 4 challenge part 2
-        print(findThreeEntries(report: entries) ?? "not found")
+        print(findThreeEntries(entries: entries) ?? "not found")
     }
 
     class func findTwoEntries(entries: [Int]) -> Int? {
@@ -39,13 +39,13 @@ class Day1 {
         return nil
     }
 
-    class func findThreeEntries(report: [Int]) -> Int? {
-        for i in 0..<report.count {
-            for j in 0..<report.count {
-                for k in 0..<report.count {
-                    let first = report[i]
-                    let second = report[j]
-                    let third = report[k]
+    class func findThreeEntries(entries: [Int]) -> Int? {
+        for i in 0..<entries.count {
+            for j in 0..<entries.count {
+                for k in 0..<entries.count {
+                    let first = entries[i]
+                    let second = entries[j]
+                    let third = entries[k]
                     if first + second + third == 2020 {
                         return first * second * third
                     }

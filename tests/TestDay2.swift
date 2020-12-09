@@ -10,29 +10,35 @@ import XCTest
 class TestDay2IsValidPassword1: XCTestCase {
 
     func test1() throws {
-        XCTAssertTrue(Day2.isValid1(lower: 1, higher: 3, character: "a", password: "abcde"))
+        let p = Policy(range: 1..<3+1, character: "a", password: "abcde")
+        XCTAssertTrue(p.isValid())
     }
 
     func test2() throws {
-        XCTAssertFalse(Day2.isValid1(lower: 1, higher: 3, character: "b", password: "cdefg"))
+        let p = Policy(range: 1..<3+1, character: "b", password: "cdefg")
+        XCTAssertFalse(p.isValid())
     }
 
     func test3() throws {
-        XCTAssertTrue(Day2.isValid1(lower: 2, higher: 9, character: "c", password: "ccccccccc"))
+        let p = Policy(range: 2..<9+1, character: "c", password: "ccccccccc")
+        XCTAssertTrue(p.isValid())
     }
 }
 
 class TestDay2IsValidPassword2: XCTestCase {
 
     func test1() throws {
-        XCTAssertTrue(Day2.isValid2(lower: 1, higher: 3, character: "a", password: "abcde"))
+        let p = Policy(range: 1..<3+1, character: "a", password: "abcde")
+        XCTAssertTrue(p.isValid2())
     }
 
     func test2() throws {
-        XCTAssertFalse(Day2.isValid2(lower: 1, higher: 3, character: "b", password: "cdefg"))
+        let p = Policy(range: 1..<3+1, character: "b", password: "cdefg")
+        XCTAssertFalse(p.isValid2())
     }
 
     func test3() throws {
-        XCTAssertFalse(Day2.isValid2(lower: 2, higher: 9, character: "c", password: "ccccccccc"))
+        let p = Policy(range: 2..<9+1, character: "c", password: "ccccccccc")
+        XCTAssertFalse(p.isValid2())
     }
 }

@@ -7,13 +7,25 @@
 
 import Foundation
 
-public class Day2 {
+struct Policy {
+    var range: Range<Int>
+    var character: Character
+    var password: String
+}
 
-    struct Policy {
-        var range: Range<Int>
-        var character: Character
-        var password: String
+extension Policy {
+    func isValid() -> Bool {
+        return range.contains(password.count(of: character))
     }
+
+    func isValid2() -> Bool {
+        let pos1 = password[range.lowerBound-1] == character
+        let pos2 = password[range.upperBound-2] == character
+        return pos1 != pos2
+    }
+}
+
+public class Day2 {
 
     class func run() {
         // 1 read data
@@ -33,18 +45,11 @@ public class Day2 {
         }
 
         // 3 challenge part 1
-        let validCount = policies.count(where: { p in
-            let count = p.password.count(of: p.character)
-            return p.range.contains(count)
-        })
+        let validCount = policies.count(where: { $0.isValid() })
         print("Part 1: \(validCount)")
 
         // 4 challenge part 2
-        let validCountNew = policies.count(where: { p in
-            let pos1 = p.password[p.range.lowerBound-1] == p.character
-            let pos2 = p.password[p.range.upperBound-2] == p.character
-            return pos1 != pos2
-        })
+        let validCountNew = policies.count(where: { $0.isValid2() })
         print("Part 2: \(validCountNew)")
     }
 }
