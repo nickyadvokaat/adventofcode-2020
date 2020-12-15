@@ -51,6 +51,15 @@
 		967730CB2589440000CFCEAA /* Day11.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966205FD258350D6003C9893 /* Day11.swift */; };
 		967730CF25894A1200CFCEAA /* TestDay13.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967730CE25894A1200CFCEAA /* TestDay13.swift */; };
 		967730D425894A5600CFCEAA /* Day13.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968BA3E225861004003EC84C /* Day13.swift */; };
+		967730D925894D3900CFCEAA /* Day16.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967730D825894D3900CFCEAA /* Day16.swift */; };
+		967730DF25894D6D00CFCEAA /* TestDay16.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967730DE25894D6D00CFCEAA /* TestDay16.swift */; };
+		967730E625894D9100CFCEAA /* Day16.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967730D825894D3900CFCEAA /* Day16.swift */; };
+		967730EA258966B700CFCEAA /* TestDay12.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967730E9258966B700CFCEAA /* TestDay12.swift */; };
+		967730ED258966BD00CFCEAA /* Day12.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9662061F2584A82E003C9893 /* Day12.swift */; };
+		967730EE258966BD00CFCEAA /* ShipInstruction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966206372584FDCA003C9893 /* ShipInstruction.swift */; };
+		967730EF258966BD00CFCEAA /* Ship.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9662062F2584FD95003C9893 /* Ship.swift */; };
+		967730F82589677B00CFCEAA /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966206332584FDB5003C9893 /* Direction.swift */; };
+		967730F92589677B00CFCEAA /* Coord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966206292584F9AC003C9893 /* Coord.swift */; };
 		968BA3E325861004003EC84C /* Day13.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968BA3E225861004003EC84C /* Day13.swift */; };
 		968BA3EA258748F2003EC84C /* Day14.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968BA3E9258748F2003EC84C /* Day14.swift */; };
 		968BA3EF25889EE1003EC84C /* Day15.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968BA3EE25889EE1003EC84C /* Day15.swift */; };
@@ -116,6 +125,9 @@
 		966296DC257FE14D00D19EED /* Day7.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Day7.txt; sourceTree = "<group>"; };
 		967730C52589436C00CFCEAA /* TestDay11.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDay11.swift; sourceTree = "<group>"; };
 		967730CE25894A1200CFCEAA /* TestDay13.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDay13.swift; sourceTree = "<group>"; };
+		967730D825894D3900CFCEAA /* Day16.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day16.swift; sourceTree = "<group>"; };
+		967730DE25894D6D00CFCEAA /* TestDay16.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDay16.swift; sourceTree = "<group>"; };
+		967730E9258966B700CFCEAA /* TestDay12.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDay12.swift; sourceTree = "<group>"; };
 		968BA3E225861004003EC84C /* Day13.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day13.swift; sourceTree = "<group>"; };
 		968BA3E9258748F2003EC84C /* Day14.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day14.swift; sourceTree = "<group>"; };
 		968BA3EE25889EE1003EC84C /* Day15.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day15.swift; sourceTree = "<group>"; };
@@ -229,6 +241,7 @@
 				968BA3E125860FF6003EC84C /* Day13 */,
 				968BA3E8258748E9003EC84C /* Day14 */,
 				968BA3ED25889ED3003EC84C /* Day15 */,
+				967730D725894D2D00CFCEAA /* Day16 */,
 			);
 			path = Challenges;
 			sourceTree = "<group>";
@@ -293,8 +306,10 @@
 				961B908F25816E51002EDCF4 /* TestDay9.swift */,
 				961B909525820048002EDCF4 /* TestDay10.swift */,
 				967730C52589436C00CFCEAA /* TestDay11.swift */,
+				967730E9258966B700CFCEAA /* TestDay12.swift */,
 				967730CE25894A1200CFCEAA /* TestDay13.swift */,
 				968BA3F52588BD99003EC84C /* TestDay15.swift */,
+				967730DE25894D6D00CFCEAA /* TestDay16.swift */,
 				9636BD472577CB46001E46A4 /* Info.plist */,
 			);
 			path = tests;
@@ -350,6 +365,14 @@
 				966206332584FDB5003C9893 /* Direction.swift */,
 			);
 			path = Grid;
+			sourceTree = "<group>";
+		};
+		967730D725894D2D00CFCEAA /* Day16 */ = {
+			isa = PBXGroup;
+			children = (
+				967730D825894D3900CFCEAA /* Day16.swift */,
+			);
+			path = Day16;
 			sourceTree = "<group>";
 		};
 		968BA3E125860FF6003EC84C /* Day13 */ = {
@@ -543,6 +566,7 @@
 				961B90742581699F002EDCF4 /* Collection+Util.swift in Sources */,
 				966205FE258350D6003C9893 /* Day11.swift in Sources */,
 				966206202584A82E003C9893 /* Day12.swift in Sources */,
+				967730D925894D3900CFCEAA /* Day16.swift in Sources */,
 				968BA3EA258748F2003EC84C /* Day14.swift in Sources */,
 				961B908725816A8C002EDCF4 /* Day10.swift in Sources */,
 				968BA3EF25889EE1003EC84C /* Day15.swift in Sources */,
@@ -565,10 +589,16 @@
 				9636BD7C25792554001E46A4 /* TestDay3.swift in Sources */,
 				9636BD572577CD36001E46A4 /* TestDay2.swift in Sources */,
 				961B906625816961002EDCF4 /* Collection+Util.swift in Sources */,
+				967730EA258966B700CFCEAA /* TestDay12.swift in Sources */,
 				961B905E2581694F002EDCF4 /* Day1.swift in Sources */,
+				967730ED258966BD00CFCEAA /* Day12.swift in Sources */,
+				967730F92589677B00CFCEAA /* Coord.swift in Sources */,
 				9636BD652577CD5D001E46A4 /* main.swift in Sources */,
 				968BA3F62588BD99003EC84C /* TestDay15.swift in Sources */,
 				966206092583CDB8003C9893 /* WaitingArea.swift in Sources */,
+				967730DF25894D6D00CFCEAA /* TestDay16.swift in Sources */,
+				967730EF258966BD00CFCEAA /* Ship.swift in Sources */,
+				967730F82589677B00CFCEAA /* Direction.swift in Sources */,
 				961B909625820048002EDCF4 /* TestDay10.swift in Sources */,
 				967730D425894A5600CFCEAA /* Day13.swift in Sources */,
 				961B908C25816AB2002EDCF4 /* Day10.swift in Sources */,
@@ -581,6 +611,8 @@
 				967730C62589436C00CFCEAA /* TestDay11.swift in Sources */,
 				961B90582581694F002EDCF4 /* Day3.swift in Sources */,
 				961B90592581694F002EDCF4 /* Day7.swift in Sources */,
+				967730EE258966BD00CFCEAA /* ShipInstruction.swift in Sources */,
+				967730E625894D9100CFCEAA /* Day16.swift in Sources */,
 				961B905D2581694F002EDCF4 /* Day6.swift in Sources */,
 				961B906825816961002EDCF4 /* String+Util.swift in Sources */,
 				961B90572581694F002EDCF4 /* Day8.swift in Sources */,
